@@ -2,7 +2,7 @@ BurnWise: Calories Burnt Prediction
 📖 Overview
 BurnWise is a Python-based machine learning project that predicts the number of calories a person burns during physical activity. By analyzing various physiological and exercise-related features, it provides an estimated calorie expenditure, helping users track their fitness goals more effectively.
 
-This model is built using a Random Forest Regressor and trained on a dataset containing user attributes and workout data.
+This model is built using an XGBoost Regressor and trained on a dataset containing user attributes and workout data.
 
 ✨ Features
 Calorie Prediction: Estimates calories burned based on user inputs.
@@ -20,7 +20,9 @@ Python
 
 Pandas: For data manipulation and analysis.
 
-Scikit-learn: For building and evaluating the machine learning model.
+Scikit-learn: For data preprocessing and model evaluation.
+
+XGBoost: For the gradient boosting model.
 
 Matplotlib / Seaborn: For data visualization (optional).
 
@@ -28,7 +30,7 @@ Matplotlib / Seaborn: For data visualization (optional).
 Prerequisites
 Make sure you have Python installed on your system. You will also need to install the required libraries.
 
-pip install pandas scikit-learn
+pip install pandas scikit-learn xgboost
 
 Installation
 Clone the repository:
@@ -65,7 +67,7 @@ Heart Rate (beats per minute)
 
 Body Temperature (in Celsius)
 
-The target variable is the number of Calories Burnt. A Random Forest Regressor was chosen for its high accuracy and robustness in handling non-linear data.
+The target variable is the number of Calories Burnt. An XGBoost Regressor was chosen for its high performance and accuracy, as it is a powerful and efficient gradient boosting algorithm.
 
 ⚠️ Disclaimer
-The predictions made by this model are estimates and should not be considered a substitute for professional medical advice. The accuracy of the prediction depends on the quality of the input data and the scope of the dataset used for training.
+The predictions made by this model are estimates and should not be considered a substitute for professional medical advice. The accuracy of the prediction d
